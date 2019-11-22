@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: #2f4454;
+}
+.navbar:hover{
+    background-color: #022238;
+}
+.row{
+    margin-top: 50px;
+}
+#left-col{
+    margin-top: 5px;
+    padding: 3px;
+    width: 200px;
+    border-radius: 5px;
+}
+.navbar-collapse ul a{
+    color: white;
+    padding: 5px;
+}
+.navbar-collapse ul{
+    margin: 10px 0px 0px 0px;
+}
+#left-col:hover{
+    background-color: rgba(150, 150, 150, 0.5 );
+}
+#search{
+  background-color:white;
+  border-radius: 20px;
+}
+#search-icon:hover{
+    margin: 2px;
+    color: #000;
+    cursor: pointer;
+}
+.col-sm-9{
+    margin-top: -470px;
+    background-color: rgba(233, 190, 190, 0.6);
+    border-radius: 20px;}
+video{
+    margin: 5px;
+    margin-top: 0px;
+    width: 95%;
+    height: 160px;
+}
+video:hover, #add-video:hover{
+    border-radius: 3px;
+    border-style: solid;
+}
+#main-box{
+    margin: 5px 0px 0px 205px;
+    border-radius: 5px;
+    width: 84.5%;
+    position: absolute;
+}
+#main-box:hover{
+    background-color: #faf;
+}
+.page-header{
+    margin-top: 0px;
+}
+#add-video{
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 50px; border-style: solid;
+}
+.subscribe{
+    padding: 0;
+}
+#subscribed{
+    display:none;
+}
+.navbar-brand{
+    color: rgb(239, 241, 243);
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+b{
+    color: rgb(187, 134, 134);
+}
+#upload{
+    border-radius: 10px;
+}
+
+.signOut{
+    font-size: 25px;
+}
+/*@media only screen and (min-width: 500px){
+    #main-box{
+        display: block;
+
+    }
+    }
+    #left-col{
+        display: none;
+    } 
+}*/
+/* for ipad pro*/
+@media only screen and (max-width: 1024px){
+    .navbar-collapse ul{
+        margin: 15px 60px 5px 0px;
+        padding: 0px;
+        width: 40%;
+    }
+    #main-box{
+        margin: 5px 0px 5px 150px;
+        width: 85%;
+        padding: 5px 5px 5px 5px;
+        background-color: #000;
+        position: absolute;
+        border-radius: 5px;
+    }
+    #left-col{
+        width: 150px;
+    }
+    video{
+        width: 150px;
+        height: 150px;
+    }
+}
+/* for tablets*/
+@media only screen and (max-width: 768px){
+    #left-col{
+       display: none;
+    }
+    .navbar{
+        margin: 1px
+    }
+    #main-box{
+        margin: 5px 0px 5px 3px;
+        background: #000;
+        width: 97%;
+        height: 800px;
+        border-radius: 5px;
+    }
+    .col-xs-6{
+        margin: 5px 5px 5px 30px ;
+        width: 40%;
+    }
+    #search{
+        margin: 10px 0px 0px 150px;
+        position: absolute;
+       
+      }
+    .navbar-collapse ul{
+        margin: 15px 45px 5px 0px;
+        padding: 0px;
+        width: 40%;
+    }
+    .navbar-collapse ul a{
+        color: white;
+        font-size: 12px;
+        padding: 5px;
+    }
+  }
+  @media only screen and (max-width: 561px){
+    .jumbotron{
+        margin: 150px 10px 20px 55px;
+        width: 80%;
+      }
+  }
+  /*for Galaxy S5 */
+  @media only screen and (max-width: 360px){ 
+    #main-box{
+        margin: 5px 5px 5px 5px;
+        width: 380px;
+        height: 1220px;
+    }
+    #main-box:hover{
+        background-color: #000;
+    }
+    .col-xs-6{
+        margin: 5px 5px 5px 20px;
+        padding: 0px;
+        width: 90%;
+    }
+    video{
+        width: 90%;
+    }
+  }

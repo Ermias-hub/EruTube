@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EruTube</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel = "icon" href ="assets/images/icon.jfif" type = "image">
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div>
+                <form action="views/Home.html" id="form">
+                  <label for="">
+                   Email <span class="glyphicon glyphicon-user"></span>
+                  </label><br>
+                  <span id="errorDisplay"></span>
+                   <input type="email" id="eml" placeholder=" Enter email" required><br>
+                  <label for="">
+                  Password  <span class="glyphicon glyphicon-lock"></span> 
+                  </label><br>
+                  <input type="password" id="psw" placeholder="Enter password" required><br><br>
+                  <input type="checkbox" ><p>Remember me</p><br><br>
+                  <button type="submit" id="login" class="btn btn-primary btn-block">Login</button>
+                  <h4>Sign Up with <a href="https://www.facebook.com/?ref=tn_tnmn">facebook</a>.</h4>
+                </form>
+            <div>
+       </div>     
+    </div>
+    <script>
+
+        var acceptedEmail='eru@gmail.com';
+        var acceptedPassword='123';
+        login.onclick = function(event) {
+            event.preventDefault();
+            var email=document.getElementById("eml").value;
+            var password=document.getElementById("psw").value;
+
+            if(acceptedEmail != email || acceptedPassword != password){
+                errorDisplay.innerHTML = 'Error : please insert valid email and password!';
+                errorDisplay.style.display = 'inline';
+                return;
+            }
+            else{
+                window.location = 'views/Home.html';
+             }
+            
+        }
+        
+    </script>
+</body>
+</html>
+
+<!-- event.preventDefault(); -->
+
+<!-- window.location -->
