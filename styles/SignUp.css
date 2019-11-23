@@ -59,6 +59,11 @@ input{
 #tele{
     width: 50%;
 }
+mark{
+    
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
 /*for Laptop*/
 @media only screen and (max-width: 1024px){
   .jumbotron{
