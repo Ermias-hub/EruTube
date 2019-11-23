@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="jumbotron">
+        <h2><b>Eru</b>Tube</h2>
         <div class="container">
             <div>
                 <form action="views/Home.html" id="form">
@@ -29,26 +30,7 @@
             <div>
        </div>     
     </div>
-    <script>
-
-        var acceptedEmail='eru@gmail.com';
-        var acceptedPassword='123';
-        login.onclick = function(event) {
-            event.preventDefault();
-            var email=document.getElementById("eml").value;
-            var password=document.getElementById("psw").value;
-
-            if(acceptedEmail != email || acceptedPassword != password){
-                errorDisplay.innerHTML = 'Error : please insert valid email and password!';
-                errorDisplay.style.display = 'inline';
-                return;
-            }
-            else{
-                window.location = 'views/Home.html';
-             }
-            
-        }
-        
+    <script src="js/login.js" >
     </script>
 </body>
 </html>

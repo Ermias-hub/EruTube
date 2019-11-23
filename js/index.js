@@ -17,11 +17,10 @@ function show(){
     let url = URL.createObjectURL(file);
     console.log(url)
     let div = document.createElement('div');
-    let header = document.createElement('h6');
-    let span=document.createElement('span');
-    let button = document.createElement('button');
+        header = document.createElement('h6');
+        span=document.createElement('span');
+        button = document.createElement('button');
     div.style.width = '260px';
-    // div.style.display = 'inline'
     button.textContent = 'subscribe';
         // button.setAttribute("onclick","callJavascriptFunction(subscribe).ele");
     span.textContent= new Date(file.lastModified).toDateString();
@@ -30,7 +29,9 @@ function show(){
     video.type= 'video/mp4';
     video.controls = true;
     video.src = url;
+    video.style.margin = '10%';
     video.className = 'vid-responsive';
     div.append(video,header,span,button);
+    div.after(div);
     Uploader.before(div);
 }

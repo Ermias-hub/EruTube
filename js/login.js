@@ -1,4 +1,4 @@
-var acceptedEmail='eru';
+var acceptedEmail='eru@gmail.com';
 var acceptedPassword='123';
 login.onclick = function(event) {
     event.preventDefault();
@@ -11,6 +11,6 @@ login.onclick = function(event) {
         return;
     }
     else{
-        window.location = '../views/Home.html';
+        window.location = 'views/Home.html';
      }
 }
