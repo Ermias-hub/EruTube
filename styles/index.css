@@ -38,7 +38,8 @@
 }
 .col-sm-9{
     margin-top: -470px;
-    background-color: rgba(233, 190, 190, 0.6);
+    background-image: url('../assets/images/main-box-image.png');
+    background-size: cover;
     border-radius: 20px;}
 video{
     margin: 5px;
@@ -89,6 +90,14 @@ b{
 
 .signOut{
     font-size: 25px;
+}
+.fixed{
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+}
+.Copy-right{
+    padding: 20PX;
+    background-color: rgb(231, 231, 240);
 }
 /* for laptop with MDPI*/
 @media only screen and (max-width: 1280px){

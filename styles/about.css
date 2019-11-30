@@ -1,0 +1,21 @@
+h2 b{
+    color: rgb(187, 134, 134);
+}
+.logo{
+    color: rgb(201, 172, 172);
+    width: 50px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo a{
+    text-decoration: none;
+}
+.fixed{
+    bottom: 0px;
+    background-color: whitesmoke;
+}
+.Copy-right{
+    padding: 20PX;
+    background-color: rgb(231, 231, 240);
+}
