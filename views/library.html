@@ -10,86 +10,67 @@
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="Home.html" style="font-size: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif;"><b>Eru</b>Tube</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="About.html">About</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-            <form id="search" class="navbar-form navbar-right form-control">
-                <input type="text" class="form-control" placeholder="Search video ...">  <span id="search-icon" class="glyphicon glyphicon-search" ></span>
-            </form>
-          </div>
-        </div>
-      </nav>
-  
+  <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
-        <div class="row">
-          <div id="left-col" class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-              <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
-              <li><a href="library.html" style="background-color: rgba(200, 50, 30, 0.5); color: white;">Library</a></li>
-              <li><a href="subscriptions.html">Subscriptions</a></li>
-              <li><a href="#">Liked videos</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-              <li><a href="">New released videos</a></li>
-              <li><a href="">Educational</a></li>
-              <li><a href="">Funny videos</a></li>
-              <li><a href="">Eritrean videos</a></li>
-              <li><a href="">Series movies</a></li>
-            </ul>
-          </div>
-          <div id="main-box" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Videos from your Library</h1>
-  
-            <div class="row placeholders">
-              <div class="col-xs-6 col-sm-3 placeholder">
-                <video src="../assets/videos/v1.mp4"  class="vid-responsive" controls></video>
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-                
-              </div>
-              <div class="col-xs-6 col-sm-3 placeholder">
-                <video src="../assets/videos/v2.mp4" class="vid-responsive" controls></video>
-                <h4>Video 2</h4>
-                <span class="text-muted">this is a video of something</span>
-              </div>
-              <div class="col-xs-6 col-sm-3 placeholder">
-                <video src="../assets/videos/v3.mp4"  class="vid-responsive" playsinline controls></video>
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-              </div>
-              <div class="col-xs-6 col-sm-3 placeholder">
-                <video src="../assets/videos/v1.mp4"  class="thumbnail" playsinline controls></video>
-                <h4>Label</h4>
-                <span class="text-muted">Something else</span>
-              </div>
-            </div>  
-            <a href="index"><h2 class="sub-header">Sign out</h2></a>
-            
-          </div>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Home.html" style="font-size: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif;"><b>Eru</b>Tube</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+          <form id="search" class="navbar-form navbar-right form-control">
+              <input type="text" class="form-control" placeholder="Search video ...">  <span id="search-icon" class="glyphicon glyphicon-search" ></span>
+          </form>
         </div>
       </div>
+    </nav>
 
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-   
+    <div class="container-fluid">
+      <div class="row">
+        <div id="left-col" class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="Home.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+            <li><a href="library.html" style="background-color: rgba(200, 50, 30, 0.5); color: white;">Library</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="liked.html">Liked videos</a></li>
+          </ul>
+        </div>
+        <div id="main-box" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Videos from your Library</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <video src="../assets/videos/v1.mp4"  class="vid-responsive" controls></video>
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+              
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <video src="../assets/videos/v2.mp4" class="vid-responsive" controls></video>
+              <h4>Video 2</h4>
+              <span class="text-muted">this is a video of something</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <video src="../assets/videos/v3.mp4"  class="vid-responsive" playsinline controls></video>
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <video src="../assets/videos/v1.mp4"  class="thumbnail" playsinline controls></video>
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>  
+          <a href="../Login.html"><h2 class="sub-header">Sign out</h2></a>
+          
+        </div>
+      </div>
+    </div>
 </body>
 </html>

@@ -8,6 +8,10 @@ function subscribe(ele){
     }
 
 }
+function thumbs(ele){
+    var element = ele.closest('.glyphicon-thumbs-up')
+    element.styleColor
+}
 
 function show(){
     let file = uploader.files[0];

@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
         <video id="eru" src="#" type="video/mp4" controls></video>
         <input id="eruIn" onchange="show()" type="file" accept="video/mp4">
         <input type="text" id="tom" style="border:5px solid black; outline: none;"oninput="change()">
+        <div class="col-xs-6 col-sm-3 placeholder" id="first-video">
+            <video src="../assets/videos/v1.mp4"  class="vid-responsive" controls></video>
+            <h6>Video hii</h6>
+            <span class="text-muted">Discription about video hii</span><br>
+            <img src="heart-icon-like.png" class="myheart" onclick="heart(this)" alt="heart-icon" style="width:20px;">
+            <img src="heart-icon.png" class="myheart1" onclick="heart(this)" alt="heart-icon" style="width:25px; display: none;">
+            <span class="glyphicon glyphicon-thumbs-up" style="width:30px" id="upp" onclick="thumbs()"></span>&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-thumbs-down" onclick="thums(this)"></span><br>
+            <button id='subscribe' onclick="subscribe(this)">subscribe</button>
+            <button id='unsubscribe' onclick="unsubscribe(this)">unsubscribe</button>
+        </div>
         <script>
             function change(){
             if(tom.style.border==='5px solid black') return tom.style.border='5px solid green'
@@ -29,7 +40,27 @@
                 //     eru.src = reader.result;
                 // }
             }
-            
+            function subscribe(ele){
+
+                if(ele.innerHTML=='subscribe'){
+                    ele.innerHTML = 'subscribed'
+                }
+                else{
+                    ele.innerHTML = 'subscribe'
+                }
+            }
+            function unsubscribe(){
+                var element = document.getElementById("first-video");
+                    element.parentNode.removeChild(element);
+            }
+            function heart(ele){
+                console.log('it is working')
+                ele.closest(".myheart").class = 'myheart1'
+            }
+            function thumbs(){
+                console.log("hiiiiiiiiiiiiiii")
+            document.getElementById("upp").style.backgroundColor = 'blue' 
+            }
         </script>
 </body>
 </html>
